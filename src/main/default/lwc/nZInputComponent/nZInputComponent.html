@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-box">
+            <h1>Add input here</h1>
+
+            <div class="slds-m-top_medium slds-m-bottom_x-large">
+                <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                    A text input field with placeholder text.
+                </h2>
+        
+                <!-- User input area -->
+                <div class="slds-p-around_medium lgc-bg">
+                    <lightning-input 
+                        type="text" 
+                        label="Enter some text" 
+                        placeholder="type here..."
+                        onchange={handleUserInput}
+                    ></lightning-input>
+                </div>
+            </div>
+            <div>
+                <p>Current user input: {userInput}</p>
+            </div>
+        </div>
+
+
+        <div class="slds-col slds-box">
+            <h1>Placeholder area</h1>
+        </div>
+      </div>
+</template>
