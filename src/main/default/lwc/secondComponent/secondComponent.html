@@ -1,5 +1,15 @@
+
 <template>
-    <h1>Placeholder area</h1>
-    <!-- Base variant: Makes a button look like a link -->
-    <lightning-button variant="base" label="Download" title="Download action with base variant" icon-name="utility:download" class="slds-m-left_x-small"></lightning-button>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <p>You have entered "{inputValue}"</p>
+            </div>
+            <footer class="slds-modal__footer">
+            <button class="slds-button slds-button_neutral" onclick={closeModal}>Close</button>
+            <button class="slds-button slds-button_brand" onclick={closeModalViaEvent}>Close Via Event</button>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
 </template>

@@ -1,9 +1,11 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 
 export default class FirstComponent extends LightningElement {
-	handleClick(event) {
-		const firstInput = this.template.querySelector('[data-id="first-input"]');
-		console.log("inputText:", firstInput.value);
-		alert(`You have insert "${firstInput.value}"`);
-	}
+	@track showSecondComponent;
+	inputValue;
+
+	handleInputChange = ({target}) => this.inputValue = target.value;
+	handleShowModal = () => this.showSecondComponent = true;
+	handleCloseModal = () => this.showSecondComponent = false;
+	handleCloseModalViaEvent = () => this.showSecondComponent = false;
 }
