@@ -1,0 +1,12 @@
+<template>
+    <lightning-input type="number" name="input2" onchange={handleChangeInput1} label="Number field with a predefined value" value={value1}></lightning-input>
+    <lightning-combobox
+            name="progress"
+            label="Status"
+            value={operation}
+            placeholder="Select Progress"
+            options={operation_options}
+            onchange={handleChange} ></lightning-combobox>
+    <lightning-input type="number" name="input2" onchange={handleChangeInput2} label="Number field with a predefined value" value={value2}></lightning-input>
+    = {output}
+</template>
