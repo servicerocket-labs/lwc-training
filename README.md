@@ -5,6 +5,7 @@
 1. Run `$ yarn sfdx:login`.
 
 ## Available Commands
-1. `sfdx:login`  : Login to Salesforce org.
-1. `sfdx:logout` : Logout from Salesforce org.
-1. `sfdx:deploy` : Deploy changes to Salesforce org.
+1. `sfdx:browser` : Open the Salesforce org on your default browser.
+1. `sfdx:deploy`  : Deploy changes to Salesforce org.
+1. `sfdx:login`   : Login to Salesforce org.
+1. `sfdx:logout`  : Logout from Salesforce org.
