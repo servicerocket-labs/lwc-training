@@ -14,8 +14,12 @@
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "sfdx:browser": "sfdx force:org:open",
+    "sfdx:dev:org": "sfdx force:org:display -u developer --verbose",
+    "sfdx:dev:setup": "sfdx plugins:install @salesforce/lwc-dev-server",
     "sfdx:deploy": "sfdx force:source:deploy -p src --loglevel fatal",
     "sfdx:login": "sfdx force:auth:sfdxurl:store -f .sfdxCredential -a developer -d -s",
+    "sfdx:login:list": "sfdx force:auth:list",
+    "sfdx:login:web": "sfdx force:auth:web:login -a developer -d -s",
     "sfdx:logout": "sfdx force:auth:logout -a"
   },
   "devDependencies": {
