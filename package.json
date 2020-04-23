@@ -14,6 +14,7 @@
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "sfdx:browser": "sfdx force:org:open",
+    "sfdx:dev:lwc": "sfdx force:lightning:lwc:start",
     "sfdx:dev:org": "sfdx force:org:display -u developer --verbose",
     "sfdx:dev:setup": "sfdx plugins:install @salesforce/lwc-dev-server",
     "sfdx:deploy": "sfdx force:source:deploy -p src --loglevel fatal",

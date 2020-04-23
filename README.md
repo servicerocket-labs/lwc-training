@@ -1,5 +1,6 @@
 # Lightning Web Component Training
 ## Get Started
+
 ### Requirements
 1. Install [yarn](https://classic.yarnpkg.com/en/docs/install/).
 1. Install [Visual Studio Code](https://code.visualstudio.com/download) (VSC).
@@ -41,8 +42,15 @@
 			$ yarn sfdx:login
 			```
 
+### Start LWC local development
+1. Run this command to start LWC local development.
+	```bash
+	$ yarn sfdx:dev:lwc
+	```
+
 ## Available Commands
 1. `sfdx:browser` 		: Open the Salesforce org on your default browser.
+1. `sfdx:dev:lwc`			: Start LWC local development at http://localhost:3333.
 1. `sfdx:dev:org`			: Show the details of the current logged in Salesforce Organization.
 1. `sfdx:dev:setup`		: Install the local development tools plugins in `SFDX`.
 1. `sfdx:deploy`  		: Deploy changes to Salesforce Organization.
