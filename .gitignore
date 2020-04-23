@@ -34,6 +34,7 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 .sfdxCredential
+.sample-sfdxCredential
 
 # Intellij
 /lwc-training.iml

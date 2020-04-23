@@ -1,0 +1,22 @@
+<template>
+    <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+        Parent Component
+    </h2>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input 
+                type="text" 
+                label="Enter some text" 
+                placeholder="type here..."
+                onchange={handleInput}
+                >
+            </lightning-input>
+        </div>
+
+        <!-- Salesforce Convention -->
+        <!-- 1) c*-component-name -->
+        <!-- 2) declare @api using kebb-case -->
+        <c-child-component user-input-to-pass-to-child={userInput}></c-child-component>
+    </div>
+</template>

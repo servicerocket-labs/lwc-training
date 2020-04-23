@@ -1,0 +1,40 @@
+<template>
+    <section class="wrapper">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            Child Component
+        </h2>
+    
+        <div>
+            <lightning-button 
+                variant="brand-outline" 
+                label="Change Color" 
+                title="Primary action" 
+                onclick={changeFontColor} 
+                class="slds-m-left_x-small"
+                >
+            </lightning-button>
+    
+            <lightning-button 
+                variant="brand" 
+                label="Change Font" 
+                title="Primary action" 
+                onclick={changeFontStyle} 
+                class="slds-m-left_x-small"
+                >
+            </lightning-button>
+    
+            <lightning-button 
+                variant="neutral" 
+                label="Change Font Size" 
+                title="Primary action" 
+                onclick={changeFontSize} 
+                class="slds-m-left_x-small"
+                >
+            </lightning-button>
+            
+            <div class="input-wrapper">
+                <p>Styled input: <span class="change-me">{userInputToPassToChild}</span></p>
+            </div>
+        </div>
+    </section>
+</template>
