@@ -1,0 +1,16 @@
+<apex:page standardController="Case">
+    <apex:includeLightning></apex:includeLightning>
+    <div id="exampleContainer"></div>
+    <script>
+        $Lightning.use("c:lwc", () => {
+            $Lightning.createComponent(
+                "c:exampleComponent",
+                {},
+                "exampleContainer",
+                (cmp) => {
+                    console.log('exampleComponent created');
+                    console.log(cmp);
+                });
+        });
+    </script>
+</apex:page>

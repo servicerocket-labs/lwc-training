@@ -1,12 +1,13 @@
 <template>
-	<lightning-card title="Example Component">
+	<lightning-card title="Example Component Testing">
 		<div class="main-container">
 			<div>This is the example of working lightning web component</div>
-			<lightning-input label="Input text" type="text" value={inputValue} onchange={handleInputChange}></lightning-input>
+			<lightning-input label="First Name" type="text" onchange={handleFirstnameChange}></lightning-input>
+			<lightning-input label="Last Name" type="text" onchange={handleLastnameChange}></lightning-input>
 			<br/>
-			<lightning-button label="Click here" onclick={handleButtonClick}></lightning-button>
-			<hr/>
-			<div>You have insert : {inputValue}</div>
+			<lightning-button label="Show value" onclick={handleButtonClick}></lightning-button>
+			<br/><br/>
+			<c-example-display-component fullname={name.fullname}></c-example-display-component>
 		</div>
 	</lightning-card>
 </template>
