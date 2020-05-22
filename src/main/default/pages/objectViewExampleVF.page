@@ -1,0 +1,16 @@
+<apex:page standardController="Case" extensions="PIOTR_LWC.CustomObjectController">
+    <apex:includeLightning></apex:includeLightning>
+    <div id="exampleContainer"></div>
+    <script>
+        $Lightning.use("c:lwc", () => {
+            $Lightning.createComponent(
+                "c:objectViewComponent",
+                { son: "{!JSINHTMLENCODE(son)}", soid: "{!JSINHTMLENCODE(soid)}"},
+                "exampleContainer",
+                (cmp) => {
+                    console.log('objectViewComponent created');
+                    console.log(cmp);
+                });
+        });
+    </script>
+</apex:page>

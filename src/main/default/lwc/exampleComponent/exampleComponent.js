@@ -7,6 +7,7 @@ export default class ExampleComponent extends LightningElement {
 		"fullname":  ""
 	}
 
+	// eslint-disable-next-line no-alert
 	handleButtonClick = () => alert(`You have insert "${this.name.fullname}"`);
 	handleFirstnameChange = (event) => {
 		this.name.firstname = event.target.value;
